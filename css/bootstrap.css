@@ -1,0 +1,55 @@
+.nav .nav-item {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.nav .nav-item:hover {
+    --bs-nav-link-hover-color: #fc742c;
+    --bs-nav-link-disabled-color: #;
+    border: #087f5b solid 1px;
+}
+
+.nav .nav-item:active {
+    --bs-nav-link-hover-color: #000000;
+    --bs-nav-link-disabled-color: #000000;
+    background-color: #ffffff;
+    border: #087f5b solid 1px;
+}
+
+.text-banner .btn-warning {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #fc742c;
+    --bs-btn-border-color: #fc742c;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f89f37;
+    --bs-btn-hover-border-color: #ffc720;
+    --bs-btn-focus-shadow-rgb: 217,164,6;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #ffcd39;
+    --bs-btn-active-border-color: #ffc720;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #fc742c;
+    --bs-btn-disabled-border-color: #fc742c;
+    border-radius: 0;
+}
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: white;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
