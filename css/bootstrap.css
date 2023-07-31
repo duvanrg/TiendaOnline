@@ -11,7 +11,6 @@
     text-decoration: none;
 }
 
-
 .nav .nav-item:hover {
     --bs-nav-link-hover-color: #fc742c;
     --bs-nav-link-disabled-color: #;
@@ -58,6 +57,7 @@
 }
 
 .navbar-nav {
+    position: absolute;
     --bs-nav-link-color: #ffffff;
     --bs-navbar-hover-color: #fc742c;
 }
