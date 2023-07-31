@@ -5,10 +5,13 @@
 }
 
 .cuerpo {
-    background-color: rgb(30, 29, 43);
+    background-color: #1e1d2b;
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+main {
+    margin: 5px;
 }
 
 header {
@@ -24,18 +27,11 @@ header {
     margin-left: 20px;
 }
 
-
 .encabezado:hover {
     margin-top: 10px;
     color: #f89f37;
     font-size: 30px;
     margin-left: 20px;
-}
-
-.container-row {
-    display: flex;
-    align-items: center;
-    margin: 15px 0 15px 0;
 }
 
 .banner {
@@ -218,7 +214,7 @@ footer section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: px;
+    gap: 30px;
 }
 
 footer h5 {
@@ -228,12 +224,98 @@ footer h5 {
 
 .tittle {
     border-bottom: 2px solid #ff702a; 
+    font-size: 24px;
+    width: max-content;
     height: 40px; 
     line-height: 40px; 
     padding: 5px 10px 5px 0;
 }
 
+.column {
+    height: 250px;
+    margin: 5px;
+}
+
+.column div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column .link {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.column .link::before {
+    content: "";
+    position: absolute;
+    line-height: 40px; 
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #ffefe8; 
+    transition: width 0.3s ease;
+}
+
+.column .link:hover::before {
+    width: 100%;
+}
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#contact-us div{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: start;
+    width: 300px;
+    gap: 5px;
+}
+
+#contact-us .Us{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #ff702a;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-us .Us:hover{
+    background-color: #ffefe8;
+    color: #1e1d2b;
+}
+
+.bx {
+    width: 100%;
+}
+
+.container-row {
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    border-bottom: #ff702a 5px solid;
+}
+
 @media (max-width: 990px) {
+    .container-row{
+        height: 50%;
+    }
+
     .banner {
         display: flex;
         flex-direction: column;
@@ -278,5 +360,29 @@ footer h5 {
         display: flex;
         flex-direction: column;
         gap: 10px;
+    }
+
+    footer section {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 0px;
+    }
+
+    footer{
+        align-items: start;
+        height: 100%;
+    }
+    
+    footer .container-row {
+        width: 300px;
+        justify-content: right;
+        align-items: start;
+    }
+
+    .column {
+        height: 100%;
     }
 }
