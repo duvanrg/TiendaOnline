@@ -10,44 +10,88 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
 main {
     margin: 5px;
+    display: grid;
 }
 
-header {
-    display: flex;
+.head .encabezado {
+    padding: 10px 15px 10px 10px;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    grid-template-columns: 2fr 3fr;
+}
+
+.encabezado div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    justify-items: center;
+    gap: 25px;
     width: 100%;
-    justify-content: space-between;
 }
 
-.encabezado {
-    margin-top: 10px;
-    color: #fc742c;
-    font-size: 26px;
+.encabezado .titulo {
+    color: #ff702a;
+    font-size: 36px;
+    font-weight: bold;
     margin-left: 20px;
+    text-decoration: none;
 }
 
-.encabezado:hover {
-    margin-top: 10px;
+.encabezado .titulo:hover {
     color: #f89f37;
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 40px;
 }
 
-.banner {
-    display: flex;
-    justify-content: center;
+.encabezado .link {
+    color: #ffffff;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.encabezado .link:hover {
+    color: #ff702a;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+section {
+    margin: 50px 0 50px 0;
+}
+
+.btn {
+    background-color: #ff702a;
+    color: #fff;
+    min-width: 130px;
+    min-height: 20px;
+    width: 30%;
+    height: 20%;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+#banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 .text {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
-.banner .text .title {
+.text div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#banner .text .title {
     color: #fc742c;
     font-size: 66px;
 }
@@ -59,38 +103,41 @@ header {
 
 .img {
     height: 400px;
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.img img {
+#banner img {
     width: 300px;
 }
 
-.about-us {
-    display: flex;
-    justify-content: center;
+.img img {
+    width: 380px;
+}
+
+#about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 3px;
 }
 
-.about-us .text .title {
+#about-us .text .title {
     color: #fc742c;
     font-size: 16px;
 }
 
-.about-us .subtittle {
+
+#about-us .subtittle {
     color: #fff;
-    font-size: 36px;
+    font-size: 35px;
     font-weight: bold;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#menu {
+    display: grid;
+    grid-template-rows: 3fr;
     padding: 3px;
 }
 
@@ -115,27 +162,31 @@ header {
     width: 100%;
 }
 
-.menu .text {
+#menu {
+    place-content: center;
+}
+
+#menu .text {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.menu .text .title {
+#menu .text .title {
     color: #fc742c;
     font-size: 16px;
     width: 100%;
     text-align: center;
 }
 
-.menu .subtittle {
+#menu .subtittle {
     color: #fff;
     font-size: 36px;
     font-weight: bold;
 }
 
-.menu .text div {
+#menu .text div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,39 +194,71 @@ header {
     margin-bottom: 30px;
 }
 
-.menu-cards {
-    display: flex;
-    gap: 10px;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 
-.service {
+#menu .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 3px;
+    place-items: center;
+    background-color: #ffefe8;
+    border-radius: 0;
+    height: 100%;
+    width: 80%;
+    border: #000 solid 2px;
+    padding-bottom: 10px;
 }
 
-.service .text {
+#menu .img-card {
+    width: 55%;
+    padding: 15px 0 0 0;
+}
+
+#menu .card-body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}
+
+#service {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 50px 7px 7px 7px;
+}
+
+#service .text {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service .text .title {
+#service .text .title {
     color: #fc742c;
     font-size: 16px;
     width: 100%;
     text-align: center;
 }
 
-.service .subtittle {
+#service .subtittle {
     color: #fff;
     font-size: 36px;
     font-weight: bold;
+    padding: 0 150px;
 }
 
-.service .text div {
+#service .text div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,39 +266,78 @@ header {
     margin-bottom: 30px;
 }
 
-.service-cards {
-    display: flex;
-    gap: 10px;
+#service .img-card {
+    width: 55%;
+    padding: 15px 0 0 0;
 }
 
-.Contact {
+
+#service .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    border-radius: 0;
+    width: 90%;
+}
+
+#service .card-title {
+    font-size: 30px;
+    color: #ff702a;
+}
+
+#service .card-text {
+    color: #fff;
+    font-size: 20px;
+}
+
+#Contact {
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
 }
 
-.Contact .card {
+#Contact .card {
+    display: flex;
+    flex-flow: column;
     background-color: #ffefe8;
     width: 80%;
+    height: 70%;
+    padding: 20px;
+}
+
+#Contact .card-body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    place-content: center;
+    background-color: #ffefe8;
     height: 300px;
+}
+
+#Contact .card-title {
+    font-size: 46px;
+}
+
+#Contact .btn {
+    margin-top: 30px;
+    height: 20px;
+    text-align: center;
 }
 
 footer {
     width: 100%;
     height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 footer section {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    align-items: center;
+    justify-items: center;
 }
 
 footer h5 {
@@ -224,11 +346,11 @@ footer h5 {
 }
 
 .tittle {
-    border-bottom: 2px solid #ff702a; 
+    border-bottom: 2px solid #ff702a;
     font-size: 24px;
     width: max-content;
-    height: 40px; 
-    line-height: 40px; 
+    height: 40px;
+    line-height: 40px;
     padding: 5px 10px 5px 0;
 }
 
@@ -254,12 +376,12 @@ footer h5 {
 .column .link::before {
     content: "";
     position: absolute;
-    line-height: 40px; 
+    line-height: 40px;
     bottom: 0;
     left: 0;
     width: 0;
     height: 2px;
-    border-bottom: 2px solid #ffefe8; 
+    border-bottom: 2px solid #ffefe8;
     transition: width 0.3s ease;
 }
 
@@ -273,7 +395,7 @@ footer h5 {
     align-items: start;
 }
 
-#contact-us div{
+#contact-us div {
     margin-top: 2px;
     display: flex;
     flex-direction: row;
@@ -283,7 +405,7 @@ footer h5 {
     gap: 5px;
 }
 
-#contact-us .Us{
+#contact-us .Us {
     width: 30px;
     height: 30px;
     text-align: center;
@@ -294,7 +416,7 @@ footer h5 {
     justify-content: center;
 }
 
-#contact-us .Us:hover{
+#contact-us .Us:hover {
     background-color: #ffefe8;
     color: #1e1d2b;
 }
@@ -313,17 +435,34 @@ footer h5 {
 }
 
 @media (max-width: 990px) {
-    .container-row{
+    .container-row {
         height: 50%;
     }
 
-    .banner {
-        display: flex;
-        flex-direction: column;
+    .head .encabezado {
+        place-items: center;
+        grid-template-columns: none;
+    }
+
+    .encabezado .titulo {
+        font-size: 50px;
+        margin: 0 0 20px 0;
+    }
+
+    .encabezado div {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        gap: 25px;
         width: 100%;
     }
 
-    .banner .text {
+    #banner {
+        grid-template-columns: none;
+        width: 100%;
+    }
+
+    #banner .text {
         margin-top: 10px;
         width: 100%;
         height: 50%;
@@ -332,8 +471,7 @@ footer h5 {
     .text>div {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        place-items: center;
     }
 
     .text .title {
@@ -345,38 +483,48 @@ footer h5 {
         text-align: center;
     }
 
-    .about-us {
-        display: flex;
-        flex-direction: column-reverse;
+    #about-us {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
         width: 100%;
     }
 
-    .about-us .text {
+    #about-us .img {
+        grid-row: 2;
+    }
+
+    #about-us .text {
+        grid-row: 1;
         margin-top: 10px;
         width: 100%;
         height: 50%;
     }
 
-    .menu-cards {
-        display: flex;
-        flex-direction: column;
+    #menu {
         gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: none;
+        gap: 40px;
+    }
+
+    footer {
+        padding-left: 10%;
+        place-items: center;
+        height: 100%;
     }
 
     footer section {
         width: 20%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: start;
+        display: grid;
+        grid-template-columns: none;
+        place-items: start;
         gap: 0px;
     }
 
-    footer{
-        align-items: start;
-        height: 100%;
-    }
-    
+
     footer .container-row {
         width: 300px;
         justify-content: right;

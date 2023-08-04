@@ -2,163 +2,152 @@
 
 <html lang="en">
 
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <link rel="shortcut icon" href="images/home.png" type="image/x-icon">
     <title>Tienda Online</title>
-</header>
+</head>
 
 <body class="cuerpo">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <a class="navbar-brand encabezado" href="#">Foods</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#banner">Home</a>
-                        <a class="nav-link" href="#about-us">About</a>
-                        <a class="nav-link" href="#menu">Menu</a>
-                        <a class="nav-link" href="#service">Service</a>
-                        <a class="nav-link" href="#Contact">Contact</a>
-                    </div>
+    <header class="head">
+        <nav>
+            <div class="encabezado">
+                <a href="#" class="titulo">Foods</a>
+                <div>
+                    <a class="link" href="#banner">Home</a>
+                    <a class="link" href="#about-us">About</a>
+                    <a class="link" href="#menu">Menu</a>
+                    <a class="link" href="#service">Service</a>
+                    <a class="link" href="#Contact">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-        <section class="container-row banner" id="banner">
+        <section id="banner">
             <div class="text">
                 <div>
                     <h2 class="title">Full Website</h2>
-                    <p class="description">Foods the <br> most precius thing</p>
-                    <a href="#menu" class="btn btn-warning menu">Today's Menu</a>
+                    <p class="description">Foods the <br> most precious thing</p>
+                    <a href="#menu" class="btn menu">Today's Menu</a>
                 </div>
             </div>
             <div class="img">
                 <img src="images/home.png" alt="home-image">
             </div>
         </section>
-        <section class="container-row about-us" id="about-us">
+        <section id="about-us">
             <div class="img">
                 <img src="images/about.png" alt="about-image">
             </div>
             <div class="text">
                 <div>
                     <h2 class="title">About Us</h2>
-                    <h3 class="subtittle">We Speak the good <br> food language</h3>
-                    <p class="description">It is a long established fact that a be distracted by the readable content
-                        looking at its layout. the point of</p>
-                    <a href="#menu" class="btn btn-warning menu">Learn More</a>
+                    <h3 class="subtittle">We Speak the good food language</h3>
+                    <p class="description">It is a long established fact that a <br> be distracted by the readable
+                        content <br> looking at its layout. The point of</p>
+                    <a href="#menu" class="btn menu">Learn More</a>
                 </div>
             </div>
         </section>
-        <section class="container-row menu" id="menu">
+        <section id="menu">
             <div class="text">
                 <div>
                     <h2 class="title">Food Menu</h2>
-                    <h3 class="subtittle">Fresh taste and grat price</h3>
+                    <h3 class="subtittle">Fresh taste and great price</h3>
                 </div>
             </div>
-            <div class="menu-cards">
-                <div class="card" style="width: 18rem;">
+            <div class="cards">
+                <div class="card">
                     <div class="carrito">
-                        <a href="#menu"><box-icon name='cart' type='solid'></a>
+                        <a href="#menu"><box-icon type='solid' name='cart'></box-icon></a>
                     </div>
-                    <img src="images/food1.png" class="card-img-top" alt="food1">
+                    <img src="images/food1.png" class="img-card" alt="food1">
                     <div class="card-body">
                         <p class="card-title">Chicken Burger</p>
                         <p class="card-text">Tasty Food</p>
-                        <a href="#" class="btn btn-primary">$11.00</a>
+                        <a href="#" class="btn">$11.00</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="carrito">
-                        <a href="#menu"><box-icon name='cart' type='solid'></box-icon></a>
+                        <a href="#menu"><box-icon type='solid' name='cart'></box-icon></a>
                     </div>
-                    <img src="images/food2.png" class="card-img-top" alt="food1">
+                    <img src="images/food2.png" class="img-card" alt="food1">
                     <div class="card-body">
                         <p class="card-title">Special Beef Burger</p>
                         <p class="card-text">Tasty Food</p>
-                        <a href="#" class="btn btn-primary">$11.00</a>
+                        <a href="#" class="btn">$11.00</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <div class="carrito">
-                        <a href="#menu"><box-icon name='cart' type='solid'></box-icon></a>
+                        <a href="#menu"><box-icon type='solid' name='cart'></box-icon></a>
                     </div>
-                    <img src="images/food3.png" class="card-img-top" alt="food1">
+                    <img src="images/food3.png" class="img-card" alt="food1">
                     <div class="card-body">
                         <p class="card-title">Chicken Fry Pack</p>
                         <p class="card-text">Tasty Food</p>
-                        <a href="#" class="btn btn-primary">$11.00</a>
+                        <a href="#" class="btn">$11.00</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-row service" id="service">
+        <section id="service">
             <div class="text">
                 <div>
-                    <h2 class="title">Food Menu</h2>
-                    <h3 class="subtittle">Fresh taste and grat price</h3>
+                    <h2 class="title">Services</h2>
+                    <h3 class="subtittle">We provide best food services</h3>
                 </div>
             </div>
-            <div class="menu-cards">
-                <div class="card" style="width: 18rem;">
-                    <img src="images/s1.png" class="card-img-top" alt="food1">
+            <div class="cards">
+                <div class="card">
+                    <img src="images/s1.png" class="img-card" alt="food1">
                     <div class="card-body">
                         <p class="card-title">Order</p>
-                        <p class="card-text">It is a long established be distracted by the readable looking at its
+                        <p class="card-text">It is a long established <br> be distracted by the readable <br> looking at its
                             layout</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="images/s2.png" class="card-img-top" alt="food1">
+                <div class="card">
+                    <img src="images/s2.png" class="img-card" alt="food1">
                     <div class="card-body">
                         <p class="card-title">Shopping</p>
-                        <p class="card-text">It is a long established be distracted by the readable looking at its
+                        <p class="card-text">It is a long established <br> be distracted by the readable <br> looking at its
                             layout</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="images/s3.png" class="card-img-top" alt="food1">
+                <div class="card">
+                    <img src="images/s3.png" class="img-card" alt="food1">
                     <div class="card-body">
-                        <p class="card-title">Dellvered</p>
-                        <p class="card-text">It is a long established be distracted by the readable looking at its
+                        <p class="card-title">Delivered</p>
+                        <p class="card-text">It is a long established <br> be distracted by the readable <br> looking at its
                             layout</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container-row Contact" id="Contact">
+        <section id="Contact">
             <div class="card">
                 <div class="card-body">
                     <p class="card-title">We make quality food <br> Everyday</p>
-                    <a href="#" class="btn btn-primary"> Learn More </a>
+                    <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <section class="container-row">
-            <div class="column" id="menu-link">
+        <section>
+            <div class="column">
                 <h5 class="tittle">Menu Links</h5>
                 <div>
                     <a href="#banner" class="link">Home</a>
@@ -168,29 +157,28 @@
                     <a href="#Contact" class="link">Contact</a>
                 </div>
             </div>
-            <div class="column" id="our-service">
+            <div class="column">
                 <h5 class="tittle">Our Service</h5>
                 <div>
-                    <a href="#" class="link">Web Desing</a>
-                    <a href="#" class="link">Web Develoment</a>
+                    <a href="#" class="link">Web Design</a>
+                    <a href="#" class="link">Web Development</a>
                     <a href="#" class="link">Marketing</a>
-                    <a href="#" class="link">Product Managent</a>
-                    <a href="#" class="link">Graphic Desing</a>
+                    <a href="#" class="link">Product Management</a>
+                    <a href="#" class="link">Graphic Design</a>
                 </div>
             </div>
-            <div class="column" id="information">
-                <h5 class="tittle">information</h5>
+            <div class="column">
+                <h5 class="tittle">Information</h5>
                 <div>
-                    <a href="#about-us" class="link">about-us</a>
+                    <a href="#about-us" class="link">About Us</a>
                     <a href="#" class="link">Delivery Information</a>
                     <a href="#" class="link">Privacy Policy</a>
-                    <a href="#" class="link">Term & Conditions</a>
+                    <a href="#" class="link">Terms & Conditions</a>
                 </div>
             </div>
             <div class="column" id="contact-us">
                 <h5 class="tittle">Contact Us</h5>
                 <div>
-
                     <a href="#" class="Us"><box-icon name='facebook-circle' type='logo'></box-icon></a>
                     <a href="#" class="Us"><box-icon type='logo' name='instagram-alt'></box-icon></a>
                     <a href="#" class="Us"><box-icon name='twitter' type='logo'></box-icon></a>
